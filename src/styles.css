@@ -15,9 +15,24 @@
 }
 
 .align-vertical {
+  align-items: center;
   align-content: center;
 }
 
 .align-center {
   justify-content: center;
+}
+
+.mr-6 {
+  margin-right: 6px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+
+.h-full {
+  height: 100%;
 }

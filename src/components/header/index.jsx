@@ -1,17 +1,20 @@
 import React from "react";
-import { Link } from "../styled";
-import styles from "./styles.module.css";
+import CubeDots from "../../assets/icons/cube-dots";
+import { IconButton, Link, ProfileButton } from "../styled";
+import "./styles.module.css";
 
 const links = ["Gmail", "Images"];
 
 function Header() {
   return (
-    <header className="flex justify-end align-vertical">
-      <div className="flex row">
-        {links.map((item) => {
-          return <Link key={item}>{item}</Link>;
-        })}
-      </div>
+    <header className="flex row justify-end align-vertical mr-8">
+      {links.map((item) => {
+        return <Link key={item}>{item}</Link>;
+      })}
+      <IconButton className="mr-12">
+        <CubeDots />
+      </IconButton>
+      <ProfileButton>R</ProfileButton>
     </header>
   );
 }
