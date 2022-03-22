@@ -9,9 +9,3 @@ header,
 footer {
   flex: none;
 }
-
-main {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  flex: auto;
-}

@@ -1,6 +1,6 @@
 import React from "react";
-import CubeDots from "../../assets/icons/cube-dots";
-import { IconButton, Link, ProfileButton } from "../styled";
+import CubeDotsIcon from "../../assets/icons/cube-dots";
+import { IconButton, Link } from "../styled";
 import styles from "./styles.module.css";
 
 const links = ["Gmail", "Images"];
@@ -16,10 +16,12 @@ function Header() {
             </Link>
           );
         })}
-        <IconButton className={styles["nav-item"]}>
-          <CubeDots />
+        <IconButton variant="flat" className={styles["nav-item"]}>
+          <CubeDotsIcon />
         </IconButton>
-        <ProfileButton className={styles["nav-item"]}>R</ProfileButton>
+        <IconButton variant="filled" className={styles["nav-item"]}>
+          R
+        </IconButton>
       </div>
     </header>
   );

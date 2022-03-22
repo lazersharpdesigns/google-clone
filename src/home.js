@@ -7,7 +7,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <main className="h-full">
+      <main>
         <Search />
       </main>
       <Footer />

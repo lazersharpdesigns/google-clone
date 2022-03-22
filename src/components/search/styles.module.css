@@ -1,13 +1,49 @@
 .main-container {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .search-container {
   display: flex;
   width: 100%;
   margin: 24px 0;
   justify-content: center;
   align-items: center;
+}
+
+.search-actions {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px 12px;
+}
+
+.searchbar:focus-within {
+  max-height: 600px;
+  padding-bottom: 8px;
+}
+
+.search-options {
+  display: none;
+  width: 100%;
+}
+
+.searchbar:focus-within div.search-options {
+  display: block;
+  width: 100%;
+}
+
+.option-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.language-container {
+  margin-top: 22px;
+  font-size: 13px;
 }
