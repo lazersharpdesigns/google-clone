@@ -1,9 +1,10 @@
 import React from "react";
-import "./styles.module.css";
+import { SearchBar } from "../styled";
+import styles from "./styles.module.css";
 
 function Search() {
   return (
-    <div className="flex row align-center align-vertical">
+    <div className={styles["main-container"]}>
       {/* google logo */}
       <section>
         <img
@@ -14,7 +15,15 @@ function Search() {
       </section>
 
       {/* searchbar */}
-      <section></section>
+      <section className={styles["search-container"]}>
+        <SearchBar>
+          {/* icon */}
+
+          {/* input */}
+
+          {/* icon */}
+        </SearchBar>
+      </section>
 
       {/* languages */}
       <section></section>

@@ -20,8 +20,8 @@ export const IconButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: ${(props) => props.width || "38px"};
-  height: ${(props) => props.height || "38px"};
+  width: ${(props) => props.width || "40px"};
+  height: ${(props) => props.height || "40px"};
   &:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
@@ -42,6 +42,21 @@ export const ProfileButton = styled.button`
   height: ${(props) => props.height || "32px"};
   &:hover {
     cursor: pointer;
-    outline: 3px solid rgba(0, 0, 0, 0.1);
+    outline: 5px solid rgba(0, 0, 0, 0.1);
+  }
+`;
+
+export const SearchBar = styled.div`
+  border-radius: 24px;
+  width: 50%;
+  display: flex;
+  padding: 5px 8px 0 14px;
+  justify-content: space-around;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  &:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
   }
 `;
