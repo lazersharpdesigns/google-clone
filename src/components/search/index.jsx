@@ -21,6 +21,18 @@ const history = [
   "there was an elf called bob",
   "he went down a flight of stairs",
   "and knocked his socks off",
+  "One apon a time",
+  "there was an elf called bob",
+  "he went down a flight of stairs",
+  // "and knocked his socks off",
+  // "One apon a time",
+  // "there was an elf called bob",
+  // "he went down a flight of stairs",
+  // "and knocked his socks off",
+  // "One apon a time",
+  // "there was an elf called bob",
+  // "he went down a flight of stairs",
+  // "and knocked his socks off",
 ];
 
 const languages = [
@@ -78,7 +90,7 @@ function Search() {
           </div>
           <div className={styles["search-options"]}>
             <Separator />
-            <div>
+            <div className={styles.scrollview}>
               {history.map((item) => {
                 return (
                   <ListItem key={item}>
@@ -93,14 +105,20 @@ function Search() {
                 );
               })}
             </div>
+            <CenterRow
+              className={`${styles["search-buttons"]} ${styles["gutters"]}`}
+            >
+              <PrimaryButton>Google Search</PrimaryButton>
+              <PrimaryButton>I'm Feeling Lucky</PrimaryButton>
+            </CenterRow>
           </div>
         </SearchBar>
       </section>
-      <CenterRow>
+      <CenterRow className={styles["search-buttons"]}>
         <PrimaryButton>Google Search</PrimaryButton>
         <PrimaryButton>I'm Feeling Lucky</PrimaryButton>
       </CenterRow>
-      <div className={styles["language-container"]}>
+      <div className={`${styles["language-container"]}`}>
         <CenterRow>
           <span style={{ marginRight: 12 }}>Google is offered in:{"   "}</span>
           {languages.map((item) => {

@@ -3,9 +3,11 @@ import { css } from "styled-components";
 
 export const Link = styled.a`
   font-family: arial, sans-serif;
-  color: rgba(0, 0, 0, 84);
-  font-size: 13px;
+  color: ${(props) => props.color || "rgba(0, 0, 0, 84)"};
+  font-size: ${(props) => (props.size || 13) + "px"};
   line-height: 24px;
+  margin-left: ${(props) => (props.ml || 0) + "px"}
+  padding-left: ${(props) => (props.pl || 0) + "px"}
   text-decoration: none;
   &:hover {
     cursor: pointer;
@@ -18,7 +20,7 @@ export const Separator = styled.div`
     switch (props.vertical) {
       case true:
         return css`
-          background: #e8eaed;
+          background: ${props.color || "#e8eaed"};
           margin-left: 10px;
           margin-right: 4px;
           width: 1px;
@@ -42,7 +44,9 @@ export const Row = styled.div`
 `;
 
 export const CenterRow = styled(Row)`
-  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 `;
 
 export const ActionLink = styled.a`
@@ -121,7 +125,6 @@ export const IconButton = styled.button`
 
 export const SearchBar = styled.div`
   border-radius: 24px;
-  width: 40%;
   display: flex;
   flex-direction: column;
   max-height: 100px;

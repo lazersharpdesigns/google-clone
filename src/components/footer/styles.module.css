@@ -1,0 +1,60 @@
+.container {
+  font-family: Arial, sans-serif;
+  color: #70757a;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+}
+
+.link-container {
+  flex-wrap: wrap;
+  padding: 5px 24px 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.location {
+  padding: 4px 24px 8px;
+}
+
+.link-container a {
+  margin-right: 24px;
+}
+
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+  position: relative;
+  right: 90px;
+}
+
+.order3 {
+  order: 3;
+}
+
+@media screen and (max-width: 1100px) {
+  .order1 {
+    order: 2;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .order2 {
+    order: 1;
+    right: 0;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .link-container {
+    justify-content: center;
+  }
+}

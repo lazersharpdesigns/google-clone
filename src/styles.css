@@ -9,3 +9,7 @@ header,
 footer {
   flex: none;
 }
+
+main {
+  position: relative;
+}

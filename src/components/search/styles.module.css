@@ -8,6 +8,7 @@
 
 .search-container {
   display: flex;
+  position: relative;
   width: 100%;
   margin: 24px 0;
   justify-content: center;
@@ -22,14 +23,41 @@
   padding: 3px 12px;
 }
 
+.searchbar {
+  top: 0;
+  width: 90%;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 600px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+/* .scrollview {
+  overflow: scroll;
+  height: 280px;
+} */
+
 .searchbar:focus-within {
-  max-height: 600px;
+  max-height: 420px;
   padding-bottom: 8px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
 }
 
 .search-options {
   display: none;
   width: 100%;
+}
+
+.search-buttons {
+  margin-top: 50px;
+}
+
+.search-buttons.gutters {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .searchbar:focus-within div.search-options {
