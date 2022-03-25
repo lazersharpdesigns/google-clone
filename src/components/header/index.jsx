@@ -3,7 +3,7 @@ import CubeDotsIcon from "../../assets/icons/cube-dots";
 import { IconButton, Link } from "../styled";
 import styles from "./styles.module.css";
 
-const links = ["Gmail", "Images"];
+const links = ["Gmail", "Drive"];
 
 function Header() {
   return (

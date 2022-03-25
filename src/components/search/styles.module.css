@@ -27,6 +27,7 @@
   top: 0;
   width: 90%;
   margin: 0 auto;
+  padding-right: 16px;
   display: inline-block;
   max-width: 600px;
   background-color: white;
@@ -34,10 +35,10 @@
   z-index: 2;
 }
 
-/* .scrollview {
+.scrollview {
   overflow: scroll;
   height: 280px;
-} */
+}
 
 .searchbar:focus-within {
   max-height: 420px;
